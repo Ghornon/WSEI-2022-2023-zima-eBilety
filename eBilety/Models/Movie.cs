@@ -1,4 +1,4 @@
-﻿using eBilety.Data;
+﻿using eBilety.Data.Enums;
 using System.ComponentModel.DataAnnotations;
 
 namespace eBilety.Models
