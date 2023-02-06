@@ -15,7 +15,7 @@ namespace eBilety.Controllers
         public async Task<IActionResult> Index()
         {
             List<Cinema> allCinemas = await _context.Cinemas.ToListAsync();
-            return View();
+            return View(allCinemas);
         }
     }
 }

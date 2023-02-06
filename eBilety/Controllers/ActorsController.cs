@@ -13,7 +13,7 @@ namespace eBilety.Controllers
         }
         public IActionResult Index()
         {
-            var data = _context.Actors.ToList();
+            List<Actor> data = _context.Actors.ToList();
             return View(data);
         }
     }
