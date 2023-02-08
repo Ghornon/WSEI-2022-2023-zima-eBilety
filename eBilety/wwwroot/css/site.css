@@ -16,6 +16,7 @@ html {
 body {
   margin-bottom: 60px;
 }
- .btn {
-     border-radius: 0 !important;
- }
+
+* {
+    border-radius: 0 !important;
+}
