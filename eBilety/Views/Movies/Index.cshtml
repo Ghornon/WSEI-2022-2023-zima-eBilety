@@ -8,10 +8,10 @@
     @foreach (var item in Model)
     {
         <div class="col-sm-12 col-md-12 col-lg-6 col-xl-4">
-            <div class="card mb-3">
-                <div class="row g-0">
+            <div class="card mb-2 bg-dark">
+                <div class="row">
                     <div class="col-md-12">
-                        <div class="card-header text-white bg-dark">
+                        <div class="card-header text-white bg-primary">
                             <p class="card-text">
                                 <h5 class="card-title text-center">
                                     @item.Name
@@ -20,17 +20,17 @@
                             </p>
                         </div>
                     </div>
-                    <div class="col-md-4">
+                    <div class="col-md-4 col-xl-5">
                         <img src="@item.ImageURL" width="100%" alt="@item.Name">
                     </div>
-                    <div class="col-md-8">
+                    <div class="col-md-8 col-xl-7">
                         <div class="card-body">
-                            <ul class="list-group list-group-flush">
-                                <li class="list-group-item"><b>Kino: </b>  @item.Cinema.Name</li>
-                                <li class="list-group-item"><b>Kategoria: </b>@item.MovieCategory</li>
-                                <li class="list-group-item"><b>Gramy od: </b>@item.StartDate.ToString("dd-MM-yyyy")</li>
-                                <li class="list-group-item"><b>Gramy do: </b>@item.EndDate.ToString("dd-MM-yyyy")</li>
-                                <li class="list-group-item ">
+                            <ul class="list-group list-group-flush bg-dark text-white">
+                                <li class="list-group-item bg-dark text-white"><b>Kino: </b>  @item.Cinema.Name</li>
+                                <li class="list-group-item bg-dark text-white"><b>Kategoria: </b>@item.MovieCategory</li>
+                                <li class="list-group-item bg-dark text-white"><b>Gramy od: </b>@item.StartDate.ToString("dd-MM-yyyy")</li>
+                                <li class="list-group-item bg-dark text-white"><b>Gramy do: </b>@item.EndDate.ToString("dd-MM-yyyy")</li>
+                                <li class="list-group-item bg-dark text-white ">
                                     <b>Dostępnośc biletów: </b>
                                     @if (DateTime.Now >= item.StartDate && DateTime.Now <= item.EndDate)
                                     {
@@ -45,7 +45,7 @@
                                         <span class="badge bg-primary text-white">PREMIERA</span>
                                     }
                                 </li>
-                                <li class="list-group-item">Koszt biletu @item.Price.ToString("N2")</li>
+                                <li class="list-group-item  bg-dark text-white">Koszt biletu @item.Price.ToString("N2")</li>
                             </ul>
                         </div>
                     </div>
