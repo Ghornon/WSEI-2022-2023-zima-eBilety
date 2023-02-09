@@ -1,5 +1,6 @@
 using Microsoft.EntityFrameworkCore;
 using eBilety.Data;
+using eBilety.Data.Services;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -7,6 +8,8 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddControllersWithViews();
 
 builder.Services.AddDbContext<AppDbContext>(options => options.UseSqlServer(builder.Configuration.GetConnectionString("DevConnection")));
+
+builder.Services.AddScoped<IActorsService, ActorsService>();
 
 var app = builder.Build();
 

@@ -1,4 +1,4 @@
-﻿using eBilety.Data;
+﻿using eBilety.Data.Services;
 using eBilety.Models;
 using Microsoft.AspNetCore.Mvc;
 
@@ -6,15 +6,29 @@ namespace eBilety.Controllers
 {
     public class ActorsController : Controller
     {
-        private readonly AppDbContext _context;
-        public ActorsController(AppDbContext context)
+        private readonly IActorsService _service;
+        public ActorsController(IActorsService service)
         {
-            this._context = context;
+            this._service = service;
         }
-        public IActionResult Index()
+        public async Task<IActionResult> Index()
         {
-            List<Actor> data = _context.Actors.ToList();
+            var data = await _service.GetAll();
             return View(data);
+        }
+        public IActionResult Create()
+        {
+            return View();
+        }
+
+        [HttpPost]
+        public async Task<IActionResult> Create([Bind("FullName,ProfilePictureURL,Bio")]Actor actor)
+        {
+            if(!ModelState.IsValid)
+                return View(actor);
+
+            _service.Add(actor);
+            return RedirectToAction(nameof(Index));
         }
     }
 }
