@@ -17,7 +17,7 @@ namespace eBilety.Models
         [Display(Name = "Biografia")]
         [Required(ErrorMessage = "Biografia jest wymagana")]
         public string Bio { get; set; }
-        public List<ActorMovie> ActorsMovies { get; set; }
+        public List<ActorMovie>? ActorsMovies { get; set; }
 
     }
 }

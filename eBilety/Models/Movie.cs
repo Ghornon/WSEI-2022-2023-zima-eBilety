@@ -15,7 +15,7 @@ namespace eBilety.Models
         public DateTime StartDate { get; set; }
         public DateTime EndDate { get; set; }
         public MovieCategory MovieCategory { get; set; }
-        public List<ActorMovie> ActorsMovies { get; set; }
+        public List<ActorMovie>? ActorsMovies { get; set; }
         public int CinemaId { get; set; }
         [ForeignKey("CinemaId")]
         public Cinema Cinema { get; set; }

@@ -13,6 +13,6 @@ namespace eBilety.Models
         [Display(Name = "Biografia")]
         public string Bio { get; set; }
 
-        public List<Movie> Movies { get; set; }
+        public List<Movie>? Movies { get; set; }
     }
 }
