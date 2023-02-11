@@ -2,6 +2,8 @@
 using eBilety.Data.Static;
 using eBilety.Models;
 using Microsoft.AspNetCore.Identity;
+using Microsoft.Extensions.DependencyInjection;
+using System.Threading.Tasks;
 
 namespace eBilety.Data
 {
@@ -315,7 +317,6 @@ namespace eBilety.Data
         {
             using (var serviceScope = applicationBuilder.ApplicationServices.CreateScope())
             {
-
                 //Roles
                 var roleManager = serviceScope.ServiceProvider.GetRequiredService<RoleManager<IdentityRole>>();
 
@@ -326,36 +327,36 @@ namespace eBilety.Data
 
                 //Users
                 var userManager = serviceScope.ServiceProvider.GetRequiredService<UserManager<ApplicationUser>>();
-                string adminUserEmail = "admin@etickets.com";
+                string adminUserEmail = "admin@gmail.com";
 
                 var adminUser = await userManager.FindByEmailAsync(adminUserEmail);
                 if (adminUser == null)
                 {
                     var newAdminUser = new ApplicationUser()
                     {
-                        FullName = "Admin User",
-                        UserName = "admin-user",
+                        FullName = "Admin Admin",
+                        UserName = "admin",
                         Email = adminUserEmail,
                         EmailConfirmed = true
                     };
-                    await userManager.CreateAsync(newAdminUser, "Coding@1234?");
+                    await userManager.CreateAsync(newAdminUser, "Admin@1234!");
                     await userManager.AddToRoleAsync(newAdminUser, UserRoles.Admin);
                 }
 
 
-                string appUserEmail = "user@etickets.com";
+                string appUserEmail = "jan.kowalski@gmail.com";
 
                 var appUser = await userManager.FindByEmailAsync(appUserEmail);
                 if (appUser == null)
                 {
                     var newAppUser = new ApplicationUser()
                     {
-                        FullName = "Application User",
-                        UserName = "app-user",
+                        FullName = "Jan Kowalski",
+                        UserName = "jan-kowalski",
                         Email = appUserEmail,
                         EmailConfirmed = true
                     };
-                    await userManager.CreateAsync(newAppUser, "Coding@1234?");
+                    await userManager.CreateAsync(newAppUser, "Janek@1234!");
                     await userManager.AddToRoleAsync(newAppUser, UserRoles.User);
                 }
             }
