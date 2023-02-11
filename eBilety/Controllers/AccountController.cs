@@ -1,10 +1,14 @@
 ﻿using eBilety.Data;
-using eBilety.Data.Enums;
+using eBilety.Data.Static;
 using eBilety.Data.ViewModels;
 using eBilety.Models;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Threading.Tasks;
 
 namespace eBilety.Controllers
 {
@@ -29,14 +33,14 @@ namespace eBilety.Controllers
         }
 
 
-        public IActionResult Login() => View(new LoginViewModel());
+        public IActionResult Login() => View(new LoginVM());
 
         [HttpPost]
-        public async Task<IActionResult> Login(LoginViewModel loginVM)
+        public async Task<IActionResult> Login(LoginVM loginVM)
         {
             if (!ModelState.IsValid) return View(loginVM);
 
-            var user = await _userManager.FindByEmailAsync(loginVM.Email);
+            var user = await _userManager.FindByEmailAsync(loginVM.EmailAddress);
             if (user != null)
             {
                 var passwordCheck = await _userManager.CheckPasswordAsync(user, loginVM.Password);
@@ -64,7 +68,7 @@ namespace eBilety.Controllers
         {
             if (!ModelState.IsValid) return View(registerVM);
 
-            var user = await _userManager.FindByEmailAsync(registerVM.Email);
+            var user = await _userManager.FindByEmailAsync(registerVM.EmailAddress);
             if (user != null)
             {
                 TempData["Error"] = "This email address is already in use";
@@ -74,8 +78,8 @@ namespace eBilety.Controllers
             var newUser = new ApplicationUser()
             {
                 FullName = registerVM.FullName,
-                Email = registerVM.Email,
-                UserName = registerVM.Email
+                Email = registerVM.EmailAddress,
+                UserName = registerVM.EmailAddress
             };
             var newUserResponse = await _userManager.CreateAsync(newUser, registerVM.Password);
 
