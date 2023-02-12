@@ -1,10 +1,11 @@
-﻿using eBilety.Data.Enums;
+﻿using eBilety.Data.Base;
+using eBilety.Data.Enums;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
 namespace eBilety.Models
 {
-    public class Movie
+    public class Movie:IEntityBase
     {
         [Key]
         public int Id { get; set; }
