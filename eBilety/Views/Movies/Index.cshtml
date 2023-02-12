@@ -74,4 +74,10 @@
             </div>
         </div>
     }
+
+    @if (User.Identity.IsAuthenticated && User.IsInRole("Admin"))
+    {
+        @await Html.PartialAsync("_CreateItem", "Movies") 
+    }
+    
 </div>
