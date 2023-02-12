@@ -1,0 +1,7 @@
+﻿@model int;
+
+<td class="align-middle d-flex flex-column">
+    <a class="btn btn-outline-primary m-1" asp-action="Edit" asp-route-id="@Model"><i class="bi bi-pencil-square"></i> Edytuj</a>
+    <a class="btn btn-outline-info m-1" asp-action="Details" asp-route-id="@Model"><i class="bi bi-eye"></i> Zobacz</a>
+    <a class="btn btn-outline-danger m-1" asp-action="Delete" asp-route-id="@Model"><i class="bi bi-trash"></i> Usuń</a>
+</td>

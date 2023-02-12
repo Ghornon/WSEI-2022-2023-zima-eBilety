@@ -1,9 +1,12 @@
 ﻿using eBilety.Data.Services;
+using eBilety.Data.Static;
 using eBilety.Models;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace eBilety.Controllers
 {
+    [Authorize(Roles = UserRoles.Admin)]
     public class ActorsController : Controller
     {
         private readonly IActorsService _service;
@@ -11,6 +14,7 @@ namespace eBilety.Controllers
         {
             this._service = service;
         }
+        [AllowAnonymous]
         public async Task<IActionResult> Index()
         {
             var data = await _service.GetAll();

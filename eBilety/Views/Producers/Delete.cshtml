@@ -1,30 +1,33 @@
-﻿@model Actor
+﻿@model Producer
 
 @{
-    ViewData["Title"] = "Usuń aktora";
+    ViewData["Title"] = "Usuń reżysera";
 }
 
 <div class="row text">
     <div class="col-md-8 offset-2">
         <p>
-            <h1 class="text-center">Czy na pewno chcesz usunąć aktora?</h1>
+            <h1 class="text-center">Czy na pewno chcesz usunąć @Model.FullName</h1>
         </p>
         <div class="row">
             <div class="col-md-8 offset-2">
                 <div class="form-group text-center">
-                    <img id="ProfilePicturePreview"  class="border-info rounded-circle" style="max-width: 150px" />
+                    <img class="border-info rounded-circle" style="max-width: 150px" id="ProfilePicturePreview" />
                 </div>
-                <div class="form-group mb-3">
-                    <label asp-for="ProfilePictureURL" class="control-label"></label>
-                    <input asp-for="ProfilePictureURL" class="form-control" readonly />
+                <div class="form-group">
+                    <label asp-for="Avatar" class="control-label"></label>
+                    <input asp-for="Avatar" class="form-control" readonly />
+                    <span asp-validation-for="Avatar" class="text-danger"></span>
                 </div>
-                <div class="form-group mb-3">
+                <div class="form-group">
                     <label asp-for="FullName" class="control-label"></label>
                     <input asp-for="FullName" class="form-control" readonly />
+                    <span asp-validation-for="FullName" class="text-danger"></span>
                 </div>
-                <div class="form-group mb-3">
+                <div class="form-group">
                     <label asp-for="Bio" class="control-label"></label>
                     <input asp-for="Bio" class="form-control" readonly />
+                    <span asp-validation-for="Bio" class="text-danger"></span>
                 </div>
 
                 <div class="form-group mb-3 row">
@@ -43,13 +46,11 @@
     </div>
 </div>
 
-@section Scripts{ 
+@section Scripts{
     <script>
-
         $(document).ready(function () {
             var output = document.getElementById('ProfilePicturePreview');
             output.src = $("#ProfilePictureURL").val();
         })
-
     </script>
 }
