@@ -8,22 +8,23 @@ namespace eBilety.Data.ViewModels
 {
     public class RegisterVM
     {
-        [Display(Name = "Full name")]
-        [Required(ErrorMessage = "Full name is required")]
+        [Display(Name = "Imię i nazwisko")]
+        [Required(ErrorMessage = "Imię i nazwisko jest wymagane")]
         public string FullName { get; set; }
 
-        [Display(Name = "Email address")]
-        [Required(ErrorMessage = "Email address is required")]
+        [Display(Name = "Email")]
+        [Required(ErrorMessage = "Email jest wymagany")]
         public string EmailAddress { get; set; }
 
-        [Required]
+        [Display(Name = "Hasło")]
+        [Required(ErrorMessage = "Hasło nie może być puste")]
         [DataType(DataType.Password)]
         public string Password { get; set; }
 
-        [Display(Name = "Confirm password")]
-        [Required(ErrorMessage = "Confirm password is required")]
+        [Display(Name = "Powtórz hasło")]
+        [Required(ErrorMessage = "Hasło nie może być puste")]
         [DataType(DataType.Password)]
-        [Compare("Password", ErrorMessage = "Passwords do not match")]
+        [Compare("Password", ErrorMessage = "Hasła nie pasują")]
         public string ConfirmPassword { get; set; }
     }
 }

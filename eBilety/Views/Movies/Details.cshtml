@@ -43,15 +43,20 @@
                                 <span class="badge bg-primary text-white">PREMIERA</span>
                             }
                         </li>
-                        <li class="list-group-item  bg-dark text-white">Koszt biletu @Model.Price.ToString("N2")</li>
+                        <li class="list-group-item  bg-dark text-white">Koszt biletu @Model.Price.ToString("N2")</li
                     </ul>
-                    <hr />
-                    <p class="card-text text-center">
+                    <p class="card-text text-white text-center mt-4">
+                        <b class="d-block">Reżyser: </b>
+                        <img class="border-info rounded-circle" src="@Model.Producer.Avatar" style="max-width: 100px" />
+                        <br />
+                        @Model.Producer.FullName
+                    </p>
+                    <p class="card-text text-center mt-2">
                         <b class="text-white">Aktorzy: </b>
                         <div class="row">
                             @foreach (var actor in Model.ActorsMovies)
                             {
-                                <div class="col-sm text-center">
+                                <div class="col-sm text-center text-white">
                                     <img class="border-info rounded-circle" src="@actor.Actor.ProfilePictureURL" style="max-width: 100px" />
                                     <br />
                                     @actor.Actor.FullName

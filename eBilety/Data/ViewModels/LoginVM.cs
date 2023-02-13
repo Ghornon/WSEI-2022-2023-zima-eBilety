@@ -8,11 +8,12 @@ namespace eBilety.Data.ViewModels
 {
     public class LoginVM
     {
-        [Display(Name = "Email address")]
-        [Required(ErrorMessage = "Email address is required")]
+        [Display(Name = "Email")]
+        [Required(ErrorMessage = "Email jest wymagany")]
         public string EmailAddress { get; set; }
 
-        [Required]
+        [Display(Name = "Hasło")]
+        [Required(ErrorMessage = "Hasło nie może być puste")]
         [DataType(DataType.Password)]
         public string Password { get; set; }
     }
