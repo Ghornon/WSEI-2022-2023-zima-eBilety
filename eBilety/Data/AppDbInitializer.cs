@@ -27,7 +27,7 @@ namespace eBilety.Data
                         new Cinema()
                         {
                             Name = "Multikino",
-                            Logo = "https://pbs.twimg.com/profile_images/1127509295/logo_multikino.jpg",
+                            Logo = "https://miastodzieci.pl/wp-content/uploads/2016/07/multikino-logo-p%C5%82askie.jpg",
                             Description = "Sieć kin Multikino: premiery i maratony filmowe. Sprawdź aktualny repertuar i kup bilet on-line!"
                         },
                         new Cinema()
@@ -58,33 +58,33 @@ namespace eBilety.Data
                     {
                         new Actor()
                         {
-                            FullName = "Actor 1",
-                            Bio = "This is the Bio of the first actor",
-                            ProfilePictureURL = "http://dotnethow.net/images/actors/actor-1.jpeg"
+                            FullName = "Mila Kunis",
+                            Bio = "Milena Markiwna Kunis urodziła się 14 sierpnia 1983 roku w Czerniowcach w ZSRR (obecnie Ukraina). Jej matka, Elwira, jest nauczycielką fizyki, zaś ojciec, Mark, inżynierem pracującym jako kierowca taksówki.",
+                            ProfilePictureURL = "https://www.themoviedb.org/t/p/w300_and_h450_bestv2/7vrTWF8PxQogF6o9ORZprYQoDOr.jpg"
 
                         },
                         new Actor()
                         {
-                            FullName = "Actor 2",
-                            Bio = "This is the Bio of the second actor",
-                            ProfilePictureURL = "http://dotnethow.net/images/actors/actor-2.jpeg"
+                            FullName = "Jason Statham",
+                            Bio = "Jason Statham (urodzony 26 lat). Juli 1967) jest angielskim aktorem i artystą walki, znanym z ról w filmach kryminalnych Guya Ritchiego: Lock, Stock and Two Smoking Barrels; Revolver; and Snatch. ",
+                            ProfilePictureURL = "https://www.themoviedb.org/t/p/w300_and_h450_bestv2/lldeQ91GwIVff43JBrpdbAAeYWj.jpg"
                         },
                         new Actor()
                         {
-                            FullName = "Actor 3",
-                            Bio = "This is the Bio of the second actor",
-                            ProfilePictureURL = "http://dotnethow.net/images/actors/actor-3.jpeg"
+                            FullName = "Liam Neeson",
+                            Bio = "Zanim został aktorem zarabiał na życie jako bokser i kierowca ciężarówki. W 1976 roku przyłączył się do Lyric Players' Theater w Belfaście. Po przeprowadzce do Dublina rozpoczął współpracę z Abbey Theater.",
+                            ProfilePictureURL = "https://www.themoviedb.org/t/p/w300_and_h450_bestv2/bboldwqSC6tdw2iL6631c98l2Mn.jpg"
                         },
                         new Actor()
                         {
-                            FullName = "Actor 4",
-                            Bio = "This is the Bio of the second actor",
-                            ProfilePictureURL = "http://dotnethow.net/images/actors/actor-4.jpeg"
+                            FullName = "Matt Damon",
+                            Bio = "Gdy miał niecałe dwa lata, jego ojciec opuścił rodzinę. W wieku 16 lat wystąpił w reklamówce, ale na prawdziwą popularność musiał jednak jeszcze zaczekać.",
+                            ProfilePictureURL = "https://www.themoviedb.org/t/p/w300_and_h450_bestv2/At3JgvaNeEN4Z4ESKlhhes85Xo3.jpg"
                         },
                         new Actor()
                         {
-                            FullName = "Actor 5",
-                            Bio = "This is the Bio of the second actor",
+                            FullName = "Margot Robbie",
+                            Bio = "Urodzona 2 lipca 1990 r w Dalby, Queensland (Australia). Jej matka Sarie Kessler zajmuje fizjoterapią, a jej ojcem jest Doug Robbie, ma również dwóch braci i jedną siostrę.",
                             ProfilePictureURL = "http://dotnethow.net/images/actors/actor-5.jpeg"
                         }
                     });
@@ -97,34 +97,34 @@ namespace eBilety.Data
                     {
                         new Producer()
                         {
-                            FullName = "Producer 1",
-                            Bio = "This is the Bio of the first actor",
-                            Avatar = "http://dotnethow.net/images/producers/producer-1.jpeg"
+                            FullName = "James Cameron",
+                            Bio = "James Cameron was born in Kapuskasing, Ontario, Canada, on August 16, 1954",
+                            Avatar = "https://www.themoviedb.org/t/p/w300_and_h450_bestv2/9NAZnTjBQ9WcXAQEzZpKy4vdQto.jpg"
 
                         },
                         new Producer()
                         {
-                            FullName = "Producer 2",
-                            Bio = "This is the Bio of the second actor",
-                            Avatar = "http://dotnethow.net/images/producers/producer-2.jpeg"
+                            FullName = "Christopher McQuarrie",
+                            Bio = "Christopher McQuarrie is an American screenwriter, producer and director. ",
+                            Avatar = "https://www.themoviedb.org/t/p/w300_and_h450_bestv2/82W339V8turXUdaCajqOyekxhmD.jpg"
                         },
                         new Producer()
                         {
-                            FullName = "Producer 3",
-                            Bio = "This is the Bio of the second actor",
-                            Avatar = "http://dotnethow.net/images/producers/producer-3.jpeg"
+                            FullName = "Steve Kloves",
+                            Bio = "Steve Kloves, born in Austin, Texas, grew up in Sunnyvale, California, where he graduated from Fremont High School.",
+                            Avatar = "https://www.themoviedb.org/t/p/w300_and_h450_bestv2/tkkE99QkVM1ofplEIIHoS709jVk.jpg"
                         },
                         new Producer()
                         {
-                            FullName = "Producer 4",
-                            Bio = "This is the Bio of the second actor",
-                            Avatar = "http://dotnethow.net/images/producers/producer-4.jpeg"
+                            FullName = "Art Marcum",
+                            Bio = "Biografia",
+                            Avatar = "https://www.themoviedb.org/t/p/w300_and_h450_bestv2/yX4gYCclvjBzGFKPVB8cp4eKksH.jpg"
                         },
                         new Producer()
                         {
-                            FullName = "Producer 5",
-                            Bio = "This is the Bio of the second actor",
-                            Avatar = "http://dotnethow.net/images/producers/producer-5.jpeg"
+                            FullName = "Joe Stillman",
+                            Bio = "oseph Stillman is a television and movie writer, producer and director.",
+                            Avatar = "https://www.themoviedb.org/t/p/w300_and_h450_bestv2/7OItqsvl8ewVlJHBky3mz6uauOd.jpg"
                         }
                     });
                     context.SaveChanges();
@@ -136,39 +136,39 @@ namespace eBilety.Data
                     {
                         new Movie()
                         {
-                            Name = "Life",
-                            Description = "This is the Life movie description",
-                            Price = 39.50,
-                            ImageURL = "http://dotnethow.net/images/movies/movie-3.jpeg",
-                            StartDate = DateTime.Now.AddDays(-10),
-                            EndDate = DateTime.Now.AddDays(10),
+                            Name = "Avatar: Istota wody",
+                            Description = "Avatar: Istota wody będzie po raz kolejny podążać za Jake'em Sully'em Sama Worthingtona dwanaście lat po odkryciu Pandory i dołączeniu do Na'vi. ",
+                            Price = 21.90,
+                            ImageURL = "https://www.themoviedb.org/t/p/w600_and_h900_bestv2/Ajs7ZyNjGMHIiATMygxMkOFeTko.jpg",
+                            StartDate = DateTime.Now.AddDays(-20),
+                            EndDate = DateTime.Now.AddDays(20),
                             CinemaId = 3,
-                            ProducerId = 3,
-                            MovieCategory = MovieCategory.Documentary
+                            ProducerId = 1,
+                            MovieCategory = MovieCategory.SciFi
                         },
                         new Movie()
                         {
-                            Name = "The Shawshank Redemption",
-                            Description = "This is the Shawshank Redemption description",
-                            Price = 29.50,
-                            ImageURL = "http://dotnethow.net/images/movies/movie-1.jpeg",
+                            Name = "Titanic",
+                            Description = "Jake i Rose (Leonardo DiCaprio i Kate Winslet), para młodych kochanków, poznają i zakochują się podczas dziewiczego rejsu \"niezatapialnego\" transatlantyku Titanic. ",
+                            Price = 15.00,
+                            ImageURL = "https://www.themoviedb.org/t/p/w600_and_h900_bestv2/9xjZS2rlVxm8SFx8kPC3aIGCOYQ.jpg",
                             StartDate = DateTime.Now,
                             EndDate = DateTime.Now.AddDays(3),
                             CinemaId = 1,
                             ProducerId = 1,
-                            MovieCategory = MovieCategory.Action
+                            MovieCategory = MovieCategory.Dramat
                         },
                         new Movie()
                         {
-                            Name = "Ghost",
-                            Description = "This is the Ghost movie description",
-                            Price = 39.50,
-                            ImageURL = "http://dotnethow.net/images/movies/movie-4.jpeg",
+                            Name = "Harry Potter i Kamień Filozoficzny",
+                            Description = "Harry Potter dowiaduje się, w dniu swoich 11-tych urodzin, że jest osieroconym dzieckiem dwojga potężnych czarodziejów i sam posiada magiczne zdolności.",
+                            Price = 19.99,
+                            ImageURL = "https://www.themoviedb.org/t/p/w600_and_h900_bestv2/wNRk1vec98vfAQa2YdZOt7h0DGe.jpg",
                             StartDate = DateTime.Now,
                             EndDate = DateTime.Now.AddDays(7),
                             CinemaId = 4,
                             ProducerId = 4,
-                            MovieCategory = MovieCategory.Horror
+                            MovieCategory = MovieCategory.Przygodowy
                         },
                         new Movie()
                         {
@@ -180,31 +180,31 @@ namespace eBilety.Data
                             EndDate = DateTime.Now.AddDays(-5),
                             CinemaId = 1,
                             ProducerId = 2,
-                            MovieCategory = MovieCategory.Documentary
+                            MovieCategory = MovieCategory.Dokumnetlany
                         },
                         new Movie()
                         {
-                            Name = "Scoob",
-                            Description = "This is the Scoob movie description",
-                            Price = 39.50,
-                            ImageURL = "http://dotnethow.net/images/movies/movie-7.jpeg",
+                            Name = "Shrek Forever ",
+                            Description = "Czym zajmują się ogry, kiedy już rozprawią się ze straszliwym smokiem, poślubią piękną królewnę i ocalą królestwo teścia? Shrek został pantoflarzem",
+                            Price = 23.50,
+                            ImageURL = "https://www.themoviedb.org/t/p/w600_and_h900_bestv2/mAn7hsIH0HgVVQOylvldl1HzySE.jpg",
                             StartDate = DateTime.Now.AddDays(-10),
                             EndDate = DateTime.Now.AddDays(-2),
                             CinemaId = 1,
                             ProducerId = 3,
-                            MovieCategory = MovieCategory.Cartoon
+                            MovieCategory = MovieCategory.Komedia
                         },
                         new Movie()
                         {
-                            Name = "Cold Soles",
-                            Description = "This is the Cold Soles movie description",
-                            Price = 39.50,
-                            ImageURL = "http://dotnethow.net/images/movies/movie-8.jpeg",
+                            Name = "Szybcy i Wściekli 7",
+                            Description = "Tej prędkości, tej wściekłości nigdy dość! Dominic Toretto (Vin Diesel), Brian O'Conner (Paul Walker), Letty Ortiz (Michelle Rodriguez) i inni szybcy i wściekli wracają na ekrany kin.",
+                            Price = 30.00,
+                            ImageURL = "https://www.themoviedb.org/t/p/w600_and_h900_bestv2/gLykdhxIgWRHN39ur2YBC4FHYaC.jpg",
                             StartDate = DateTime.Now.AddDays(3),
                             EndDate = DateTime.Now.AddDays(20),
                             CinemaId = 1,
                             ProducerId = 5,
-                            MovieCategory = MovieCategory.Drama
+                            MovieCategory = MovieCategory.Akcja
                         }
                     });
                     context.SaveChanges();

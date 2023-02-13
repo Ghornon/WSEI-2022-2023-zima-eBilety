@@ -2,11 +2,12 @@
 {
     public enum MovieCategory
     {
-        Action = 1,
-        Comedy,
-        Drama,
-        Documentary,
+        Akcja = 1,
+        Komedia,
+        Dramat,
+        Dokumnetlany,
         Horror,
-        Cartoon
+        SciFi,
+        Przygodowy
     }
 }
