@@ -5,7 +5,7 @@ namespace eBilety.Models
 {
     public class ApplicationUser:IdentityUser
     {
-        [Display(Name = "Full name")]
+        [Display(Name = "Imię i nazwisko")]
         public string FullName { get; set; }
     }
 }

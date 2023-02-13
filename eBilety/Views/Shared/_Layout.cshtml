@@ -44,6 +44,10 @@
                         <button class="btn btn-secondary" type="submit">Wyszukaj</button>
                     </form>
 
+                    <ul class="navbar-nav">
+                        @await Component.InvokeAsync("ShoppingCartSummary")
+                    </ul>
+
                     <partial name="_Identity.cshtml" />
                 </div>
             </div>
