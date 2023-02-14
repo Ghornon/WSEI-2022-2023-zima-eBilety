@@ -60,7 +60,7 @@ namespace eBilety.Data
                         {
                             FullName = "Mila Kunis",
                             Bio = "Milena Markiwna Kunis urodziła się 14 sierpnia 1983 roku w Czerniowcach w ZSRR (obecnie Ukraina). Jej matka, Elwira, jest nauczycielką fizyki, zaś ojciec, Mark, inżynierem pracującym jako kierowca taksówki.",
-                            ProfilePictureURL = "https://www.themoviedb.org/t/p/w300_and_h450_bestv2/7vrTWF8PxQogF6o9ORZprYQoDOr.jpg"
+                            ProfilePictureURL = "https://www.themoviedb.org/t/p/w300_and_h450_bestv2/811vCRSr9s2MFwCIOo1jWHltu3R.jpg"
 
                         },
                         new Actor()
@@ -85,7 +85,7 @@ namespace eBilety.Data
                         {
                             FullName = "Margot Robbie",
                             Bio = "Urodzona 2 lipca 1990 r w Dalby, Queensland (Australia). Jej matka Sarie Kessler zajmuje fizjoterapią, a jej ojcem jest Doug Robbie, ma również dwóch braci i jedną siostrę.",
-                            ProfilePictureURL = "http://dotnethow.net/images/actors/actor-5.jpeg"
+                            ProfilePictureURL = "https://www.themoviedb.org/t/p/w300_and_h450_bestv2/euDPyqLnuwaWMHajcU3oZ9uZezR.jpg"
                         }
                     });
                     context.SaveChanges();
