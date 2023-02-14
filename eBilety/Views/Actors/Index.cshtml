@@ -1,4 +1,6 @@
-﻿@model IEnumerable<Actor>
+﻿@using Microsoft.AspNetCore.Identity;
+@inject UserManager<ApplicationUser> UserManager; 
+@model IEnumerable<Actor>
 
 @{
     ViewData["Title"] = "Aktorzy";
@@ -23,7 +25,7 @@
                 {
                     <tr>
                         <td class="align-middle">
-                            <img class="rounded-circle" src="@item.ProfilePictureURL" alt="@item.FullName" style="max-width: 150px" />
+                            <img class="" src="@item.ProfilePictureURL" alt="@item.FullName" style="max-width: 150px" />
                         </td>
                         <td class="align-middle">
                             @Html.DisplayFor(modelItem => item.FullName);
@@ -40,6 +42,9 @@
             </tbody>
         </table>
 
-        @await Html.PartialAsync("_CreateItem", "Actors") 
+        @if (User.Identity.IsAuthenticated && User.IsInRole("Admin"))
+        {
+            @await Html.PartialAsync("_CreateItem", "Actors") 
+        }
     </div>
 </div>

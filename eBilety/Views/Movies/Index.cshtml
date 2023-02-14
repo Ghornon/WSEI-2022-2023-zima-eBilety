@@ -1,4 +1,6 @@
-﻿@model IEnumerable<Movie>
+﻿@using Microsoft.AspNetCore.Identity;
+@inject UserManager<ApplicationUser> UserManager; 
+@model IEnumerable<Movie>
 
 @{
     ViewData["Title"] = "Filmy";

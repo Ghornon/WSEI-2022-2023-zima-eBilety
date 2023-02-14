@@ -1,4 +1,6 @@
-﻿@model IEnumerable<Cinema>
+﻿@using Microsoft.AspNetCore.Identity;
+@inject UserManager<ApplicationUser> UserManager; 
+@model IEnumerable<Cinema>
 
 @{
     ViewData["Title"] = "List kin";
@@ -41,6 +43,9 @@
 
         </table>
 
-        @await Html.PartialAsync("_CreateItem", "Cinemas") 
+        @if (User.Identity.IsAuthenticated && User.IsInRole("Admin"))
+        {
+            @await Html.PartialAsync("_CreateItem", "Cinemas") 
+        }
     </div>
 </div>

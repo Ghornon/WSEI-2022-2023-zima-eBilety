@@ -47,7 +47,7 @@
                     </ul>
                     <p class="card-text text-white text-center mt-4">
                         <b class="d-block">Reżyser: </b>
-                        <img class="border-info rounded-circle" src="@Model.Producer.Avatar" style="max-width: 100px" />
+                        <img class="border-info" src="@Model.Producer.Avatar" style="max-width: 100px" />
                         <br />
                         @Model.Producer.FullName
                     </p>
@@ -57,7 +57,7 @@
                             @foreach (var actor in Model.ActorsMovies)
                             {
                                 <div class="col-sm text-center text-white">
-                                    <img class="border-info rounded-circle" src="@actor.Actor.ProfilePictureURL" style="max-width: 100px" />
+                                    <img class="border-info" src="@actor.Actor.ProfilePictureURL" style="max-width: 100px" />
                                     <br />
                                     @actor.Actor.FullName
                                 </div>
