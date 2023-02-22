@@ -42,7 +42,7 @@ To use the application, follow these steps:
 6. You can view your booked tickets on the "All Orders" page.
 7. Admin users can add, edit, and delete movies, actors, producers, and showtime in the cinema hall by logging in with their credentials.
 
-## Seeded users
+## Built-in users
 ### Administrator
 - Login: admin@gmail.com
 - Password: Admin@1234!
@@ -55,4 +55,4 @@ To use the application, follow these steps:
 Fill free to use
 
 ## License
-This project is licensed under the MIT License. See the LICENSE file for details.
+This project is licensed under the GNU Affero General Public License v3.0. See the LICENSE file for details.
